@@ -1,0 +1,21 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "registration bot for the extension",
+  "main": "bot.js",
+  "scripts": {
+    "start": "tsc && node build/bot.js",
+    "restart": "node build/bot.js",
+    "build": "tsc",
+    "upload": "~/Documents/chrome_extensions/upload.sh ."
+  },
+  "author": "nm0829",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.13",
+    "axios": "^0.19.2",
+    "discord.io": "^2.5.3",
+    "discord.js": "^12.2.0",
+    "winston": "^3.2.1"
+  }
+}
