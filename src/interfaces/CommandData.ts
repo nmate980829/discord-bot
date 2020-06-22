@@ -1,6 +1,6 @@
-interface CommandData { 
-	name: string,
-	args: string[]
+interface CommandData {
+	name: string;
+	args: string[];
 }
 
 export default CommandData;

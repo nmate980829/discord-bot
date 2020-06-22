@@ -4,10 +4,11 @@
   "description": "registration bot for the extension",
   "main": "bot.js",
   "scripts": {
-    "start": "tsc && node build/bot.js",
+    "start": "tsc && node build/src/bot.js",
     "restart": "node build/bot.js",
     "build": "tsc",
-    "upload": "~/Documents/chrome_extensions/upload.sh ."
+    "upload": "~/Documents/chrome_extensions/upload.sh .",
+    "lint": "eslint '*/**/*.ts' --quiet --fix"
   },
   "author": "nm0829",
   "license": "ISC",
@@ -16,6 +17,15 @@
     "axios": "^0.19.2",
     "discord.io": "^2.5.3",
     "discord.js": "^12.2.0",
+    "typescript": "^3.9.5",
     "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
   }
 }

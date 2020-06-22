@@ -109,3 +109,5 @@ package-lock.json
 upload.dat
 yarn.lock
 secrets.json
+src/commands/e10-specific/
+dump/
